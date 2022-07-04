@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/money_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_currency_bitcoin"/>
+
+    <TextView
+        android:id="@+id/vault_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/money_icon"
+        app:layout_constraintBottom_toBottomOf="@id/money_icon"
+        app:layout_constraintLeft_toRightOf="@id/money_icon"
+        android:textSize="18sp"
+        android:layout_marginStart="15dp"/>
+
+    <ImageView
+        android:id="@+id/like_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/money_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_star_outline"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
